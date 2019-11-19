@@ -1,0 +1,85 @@
+.ChatWindow {
+  position: fixed;
+  bottom: 0;
+  right: 190px;
+  height: auto;
+  width: 250px;
+  z-index: 90;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15), 0 3px 11px rgba(0, 0, 0, 0.12);
+  border-radius: 6px 6px 0 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+    color: #fff;
+    background-color: #ffb142;
+    border-radius: 6px 6px 0 0;
+    height: 40px;
+    cursor: pointer;
+    p {
+      margin-left: 10px;
+    }
+    .x {
+      color: #fff;
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+  .message-container {
+    display: block;
+    max-height: 260px;
+    min-height: 260px;
+    overflow-y: auto;
+
+    .message-content {
+      flex: 1;
+      padding: 0 14px;
+      background-color: #fff;
+    }
+  }
+
+  .input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #eee;
+    height: 50px;
+    width: 100%;
+    input {
+      width: calc(100% - 75px);
+      border: none;
+      height: 30px;
+    }
+  }
+
+  .minimize {
+    display: none;
+  }
+
+  .minimize-window {
+    height: unset;
+  }
+
+  @include respond-to(small) {
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    .message-container {
+      max-height: unset;
+      height: 100%;
+    }
+  }
+}
+
+.minimize-window {
+  height: unset;
+}

@@ -1,0 +1,22 @@
+%main_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 30px;
+  width: 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: #238647;
+  color: #fff;
+}
+
+.login-btn {
+  @extend %main_btn;
+  background-color: #3394d7;
+}
+
+.send-btn {
+  @extend %main_btn;
+  background-color: #238647;
+}

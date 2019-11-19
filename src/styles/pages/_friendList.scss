@@ -1,0 +1,21 @@
+.FriendList {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  h3 {
+    color: #2872bc;
+  }
+  p {
+    color: rgb(68, 67, 67);
+  }
+  .user {
+    margin: 3px 0;
+    padding: 3px 0;
+    cursor: pointer;
+  }
+  .user:hover {
+    color: #238647;
+    background-color: #eee;
+  }
+}

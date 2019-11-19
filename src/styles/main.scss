@@ -1,0 +1,27 @@
+@import "pages/home";
+@import "pages/friendList";
+@import "pages/login";
+@import "components/header";
+@import "components/footer";
+@import "components/chatWindow";
+@import "components/message";
+
+@import "mixins/breakpoints.scss";
+
+@import "base/typography";
+@import "base/buttons";
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.app-container {
+  margin: auto;
+  height: 600px;
+}

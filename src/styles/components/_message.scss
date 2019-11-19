@@ -1,0 +1,26 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+
+  .right-user {
+    margin-left: auto;
+  }
+  .content {
+    background-color: #eee;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+    // width: calc(100% - 50px);
+    word-break: break-all;
+    margin-right: 10px;
+    border-radius: 0 10px 10px 10px;
+  }
+  .right-content {
+    background-color: #3394d7;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 10px 0 10px 10px;
+  }
+}
