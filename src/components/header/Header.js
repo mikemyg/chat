@@ -12,7 +12,7 @@ const Header = props => {
         }}
         className="header-logo"
       >
-        Bunq Chat
+        Chat
       </h3>
       <h3
         onClick={() => {
