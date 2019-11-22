@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="Footer">
-      <h4>Bunq Assignment</h4> <div className="footnote">by Michail Mygas</div>
+      <h4>Chat </h4> <div className="footnote">by Mike</div>
     </div>
   );
 };
